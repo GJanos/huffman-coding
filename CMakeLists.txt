@@ -34,7 +34,7 @@ endif()
 
 find_package(Boost REQUIRED)
 
-add_executable(glzTest main.cpp Huffman.cpp HuffmanTable.cpp HuffmanTable.h ReverseHuffmanTable.cpp ReverseHuffmanTable.h HuffmanPrioQueue.cpp HuffmanPrioQueue.h)
+add_executable(glzTest main.cpp Huffman.cpp HuffmanTable.cpp HuffmanTable.h HuffmanTree.cpp HuffmanTree.h)
 
 target_include_directories(glzTest
         PRIVATE ${LZ4_INCLUDE_DIR}

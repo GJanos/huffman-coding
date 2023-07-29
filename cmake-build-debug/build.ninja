@@ -70,15 +70,8 @@ build CMakeFiles/glzTest.dir/HuffmanTable.cpp.o: CXX_COMPILER__glzTest_Debug /ho
   OBJECT_DIR = CMakeFiles/glzTest.dir
   OBJECT_FILE_DIR = CMakeFiles/glzTest.dir
 
-build CMakeFiles/glzTest.dir/ReverseHuffmanTable.cpp.o: CXX_COMPILER__glzTest_Debug /home/gorondi/work/glzTest/ReverseHuffmanTable.cpp || cmake_object_order_depends_target_glzTest
-  DEP_FILE = CMakeFiles/glzTest.dir/ReverseHuffmanTable.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -Wno-missing-braces -std=gnu++20
-  INCLUDES = -I/home/gorondi/work/glzTest/cmake-build-debug/_deps/fmt-src/include -isystem /home/gorondi/work/glzTest/cmake-build-debug/_deps/glaze-src/include
-  OBJECT_DIR = CMakeFiles/glzTest.dir
-  OBJECT_FILE_DIR = CMakeFiles/glzTest.dir
-
-build CMakeFiles/glzTest.dir/HuffmanPrioQueue.cpp.o: CXX_COMPILER__glzTest_Debug /home/gorondi/work/glzTest/HuffmanPrioQueue.cpp || cmake_object_order_depends_target_glzTest
-  DEP_FILE = CMakeFiles/glzTest.dir/HuffmanPrioQueue.cpp.o.d
+build CMakeFiles/glzTest.dir/HuffmanTree.cpp.o: CXX_COMPILER__glzTest_Debug /home/gorondi/work/glzTest/HuffmanTree.cpp || cmake_object_order_depends_target_glzTest
+  DEP_FILE = CMakeFiles/glzTest.dir/HuffmanTree.cpp.o.d
   FLAGS = -g -fdiagnostics-color=always -Wno-missing-braces -std=gnu++20
   INCLUDES = -I/home/gorondi/work/glzTest/cmake-build-debug/_deps/fmt-src/include -isystem /home/gorondi/work/glzTest/cmake-build-debug/_deps/glaze-src/include
   OBJECT_DIR = CMakeFiles/glzTest.dir
@@ -92,7 +85,7 @@ build CMakeFiles/glzTest.dir/HuffmanPrioQueue.cpp.o: CXX_COMPILER__glzTest_Debug
 #############################################
 # Link the executable glzTest
 
-build glzTest: CXX_EXECUTABLE_LINKER__glzTest_Debug CMakeFiles/glzTest.dir/main.cpp.o CMakeFiles/glzTest.dir/Huffman.cpp.o CMakeFiles/glzTest.dir/HuffmanTable.cpp.o CMakeFiles/glzTest.dir/ReverseHuffmanTable.cpp.o CMakeFiles/glzTest.dir/HuffmanPrioQueue.cpp.o | _deps/fmt-build/libfmtd.a /usr/local/lib/liblz4.so /usr/local/lib/libsnappy.a || _deps/fmt-build/libfmtd.a
+build glzTest: CXX_EXECUTABLE_LINKER__glzTest_Debug CMakeFiles/glzTest.dir/main.cpp.o CMakeFiles/glzTest.dir/Huffman.cpp.o CMakeFiles/glzTest.dir/HuffmanTable.cpp.o CMakeFiles/glzTest.dir/HuffmanTree.cpp.o | _deps/fmt-build/libfmtd.a /usr/local/lib/liblz4.so /usr/local/lib/libsnappy.a || _deps/fmt-build/libfmtd.a
   FLAGS = -g
   LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  _deps/fmt-build/libfmtd.a  /usr/local/lib/liblz4.so  /usr/local/lib/libsnappy.a
   OBJECT_DIR = CMakeFiles/glzTest.dir

@@ -172,12 +172,12 @@ void huffman_compression_test(){
             {"USER_ACTION", 10},
             {"DATABASE", 5}
     };
+
     Huffman huffman;
-    huffman.buildHuffmanTree(logMessageFrequencies);
+    huffman.buildHuffmanTable(logMessageFrequencies);
     huffman.printHuffmanTable();
     std::string testString = "SUCCESS";
     std::string encoded_str = huffman.compress(testString);
-    huffman.printBitsOfString(encoded_str);
     fmt::print("Encoded string: {}, encoding ratio {}\n", encoded_str, (float) encoded_str.size() / testString.size());
     std::string decoded_str = huffman.decompress(encoded_str);
     fmt::print("Decoded string: {}\n", decoded_str);
