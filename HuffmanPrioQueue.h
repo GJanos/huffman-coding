@@ -1,0 +1,10 @@
+#ifndef GLZTEST_HUFFMANPRIOQUEUE_H
+#define GLZTEST_HUFFMANPRIOQUEUE_H
+
+
+class HuffmanPrioQueue {
+
+};
+
+
+#endif //GLZTEST_HUFFMANPRIOQUEUE_H

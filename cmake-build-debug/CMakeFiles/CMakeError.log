@@ -1,0 +1,29 @@
+Determining if the strtod_l exist failed with the following output:
+Change Dir: /home/gorondi/work/glzTest/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/opt/clion-2022.3.2/bin/ninja/linux/x64/ninja cmTC_98001 && [1/2] Building C object CMakeFiles/cmTC_98001.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_98001.dir/CheckSymbolExists.c.o 
+/usr/bin/cc   -fdiagnostics-color=always -o CMakeFiles/cmTC_98001.dir/CheckSymbolExists.c.o -c /home/gorondi/work/glzTest/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/gorondi/work/glzTest/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/gorondi/work/glzTest/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘strtod_l’ undeclared (first use in this function); did you mean ‘strtoull’?
+    8 |   return ((int*)(&strtod_l))[argc];
+      |                   ^~~~~~~~
+      |                   strtoull
+/home/gorondi/work/glzTest/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+ninja: build stopped: subcommand failed.
+
+
+File /home/gorondi/work/glzTest/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strtod_l
+  return ((int*)(&strtod_l))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}

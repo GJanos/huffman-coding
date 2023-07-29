@@ -1,0 +1,10 @@
+#ifndef GLZTEST_HUFFMANTABLE_H
+#define GLZTEST_HUFFMANTABLE_H
+
+
+class HuffmanTable {
+
+};
+
+
+#endif //GLZTEST_HUFFMANTABLE_H
