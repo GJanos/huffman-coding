@@ -1,14 +1,14 @@
-#ifndef GLZTEST_HUFFMANTABLE_H
-#define GLZTEST_HUFFMANTABLE_H
+#ifndef GLZTEST_HUFFMAN_TABLE_H
+#define GLZTEST_HUFFMAN_TABLE_H
 
-#include "HuffmanTree.h"
+#include "huffman_tree.h"
 
 #include <unordered_map>
 #include <boost/dynamic_bitset.hpp>
 
-class HuffmanTable {
+class huffman_table {
 public:
-    void build(HuffmanTree::Node *root);
+    void build(huffman_tree::Node *root);
 
     std::string toString();
     void fromString(const std::string &table);
@@ -32,4 +32,4 @@ private:
 };
 
 
-#endif //GLZTEST_HUFFMANTABLE_H
+#endif //GLZTEST_HUFFMAN_TABLE_H

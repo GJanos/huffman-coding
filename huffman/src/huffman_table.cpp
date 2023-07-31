@@ -1,12 +1,12 @@
-#include "HuffmanTable.h"
+#include "huffman_table.h"
 #include "fmt/format.h"
 
 ///PUBLIC
-void HuffmanTable::build(HuffmanTree::Node *root) {
+void huffman_table::build(huffman_tree::Node *root) {
     boost::dynamic_bitset<> currentCode;
 
-    std::function<void(HuffmanTree::Node *, boost::dynamic_bitset<> &)> traverse = [&](HuffmanTree::Node *node,
-                                                                                       boost::dynamic_bitset<> &currentCode) {
+    std::function<void(huffman_tree::Node *, boost::dynamic_bitset<> &)> traverse = [&](huffman_tree::Node *node,
+                                                                                        boost::dynamic_bitset<> &currentCode) {
         if (node == nullptr) {
             return;
         }
@@ -28,7 +28,7 @@ void HuffmanTable::build(HuffmanTree::Node *root) {
     setReversedTable();
 }
 
-std::string HuffmanTable::toString() {
+std::string huffman_table::toString() {
     std::string result;
     int predicted_huff_table_length = ceil((table.size() * (getAvgCodeLenght() + 1)) / 8.0);
     result.reserve(predicted_huff_table_length);
@@ -43,7 +43,7 @@ std::string HuffmanTable::toString() {
     return result;
 }
 
-void HuffmanTable::fromString(const std::string &table_str) {
+void huffman_table::fromString(const std::string &table_str) {
     std::string::size_type pos = 0;
     std::string::size_type prev = 0;
 
@@ -62,7 +62,7 @@ void HuffmanTable::fromString(const std::string &table_str) {
     setReversedTable();
 }
 
-void HuffmanTable::print() {
+void huffman_table::print() {
     for (const auto &pair: table) {
         fmt::print("{}: ", pair.first);
         for (int i = 0; i < pair.second.size(); i++) {
@@ -72,7 +72,7 @@ void HuffmanTable::print() {
     }
 }
 
-int HuffmanTable::getAvgCodeLenght() {
+int huffman_table::getAvgCodeLenght() {
     int sum = 0;
     for (const auto &pair: table) {
         sum += pair.second.size();
@@ -80,7 +80,7 @@ int HuffmanTable::getAvgCodeLenght() {
     return sum / table.size();
 }
 
-int HuffmanTable::getLongestCodeLength() {
+int huffman_table::getLongestCodeLength() {
     int longest = 0;
     for (const auto &pair: table) {
         if (pair.second.size() > longest) {
@@ -90,33 +90,33 @@ int HuffmanTable::getLongestCodeLength() {
     return longest;
 }
 
-int HuffmanTable::predictEncodedLength(const std::string& text){
+int huffman_table::predictEncodedLength(const std::string& text){
     int total_bits = (text.size() - 1) * 8;
     double avg_code_length = static_cast<double>(getAvgCodeLenght());
     return std::ceil(total_bits / avg_code_length);
 }
 
-int HuffmanTable::predicDecodedLength(const std::string &text) {
+int huffman_table::predicDecodedLength(const std::string &text) {
     double longest_code_length = static_cast<double>(getLongestCodeLength());
     double total_encoded_length = text.size() * longest_code_length;
     int total_encoded_bytes = std::ceil(total_encoded_length / 8.0);
     return total_encoded_bytes + 1;
 }
 
-const std::unordered_map<char, boost::dynamic_bitset<>> &HuffmanTable::getTable() {
+const std::unordered_map<char, boost::dynamic_bitset<>> &huffman_table::getTable() {
     return table;
 }
 
-const std::unordered_map<boost::dynamic_bitset<>, char> &HuffmanTable::getReversedTable() {
+const std::unordered_map<boost::dynamic_bitset<>, char> &huffman_table::getReversedTable() {
     return reversedTable;
 }
 
-void HuffmanTable::setTable(const std::unordered_map<char, boost::dynamic_bitset<>> &table) {
+void huffman_table::setTable(const std::unordered_map<char, boost::dynamic_bitset<>> &table) {
     this->table = table;
     setReversedTable();
 }
 
-void HuffmanTable::setReversedTable() {
+void huffman_table::setReversedTable() {
     for (auto &[huffman_key, huffman_value]: table) {
         reversedTable[huffman_value] = huffman_key;
     }

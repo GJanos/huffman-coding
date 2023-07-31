@@ -1,6 +1,6 @@
-#include "HuffmanTree.h"
+#include "huffman_tree.h"
 
-HuffmanTree::Node *HuffmanTree::build(const std::map<char, int> &freq_map) {
+huffman_tree::Node *huffman_tree::build(const std::map<char, int> &freq_map) {
     for (auto pair: freq_map) {
         prioQueue.push(new Node(pair.first, pair.second, nullptr, nullptr));
     }

@@ -1,10 +1,10 @@
 #include <functional>
-#include "Huffman.h"
-#include <fmt/core.h>
+#include "huffman.h"
+#include "fmt/core.h"
 
 /// PUBLIC
 
-std::string Huffman::compress(const std::string &text) {
+std::string huffman::compress(const std::string &text) {
     std::string result;
     // +1 is for the carry over char that stores in which bit the encoded string ended inside the last byte
     // 111 was useful info, but had to reserve a full 8 bits for it (char) 11100000
@@ -36,7 +36,7 @@ std::string Huffman::compress(const std::string &text) {
     return result;
 }
 
-std::string Huffman::decompress(const std::string &text) {
+std::string huffman::decompress(const std::string &text) {
     std::string result;
     result.reserve(table.predictEncodedLength(text));
 
@@ -45,8 +45,6 @@ std::string Huffman::decompress(const std::string &text) {
     boost::dynamic_bitset<> bit_buffer;
     int buffer_bits_cnt = 0;
     std::bitset<8> bits;
-//    printHuffmanTable();
-//    printBitsOfString(text);
 
     for (size_t idx = 0; idx < text.size() - 1; ++idx) {
         bits = text[idx];
@@ -68,19 +66,19 @@ std::string Huffman::decompress(const std::string &text) {
     return result;
 }
 
-bool Huffman::buildHuffmanTable(const std::string &text_to_compress) {
+bool huffman::buildHuffmanTable(const std::string &text_to_compress) {
     if (text_to_compress.empty()) {
         std::cout << "Empty string" << std::endl;
         return true;
     }
 
     std::map<char, int> freq_map = buildFrequencyMap(text_to_compress);
-    HuffmanTree::Node *root = tree.build(freq_map);
+    huffman_tree::Node *root = tree.build(freq_map);
     table.build(root);
     return true;
 }
 
-bool Huffman::buildHuffmanTable(const std::map<std::string, int> &freq_of_logs) {
+bool huffman::buildHuffmanTable(const std::map<std::string, int> &freq_of_logs) {
     if (freq_of_logs.empty()) {
         std::cout << "Empty string" << std::endl;
         return true;
@@ -88,32 +86,32 @@ bool Huffman::buildHuffmanTable(const std::map<std::string, int> &freq_of_logs) 
 
     std::string text_to_compress = buildLogString(freq_of_logs);
     std::map<char, int> freq_map = buildFrequencyMap(text_to_compress);
-    HuffmanTree::Node *root = tree.build(freq_map);
+    huffman_tree::Node *root = tree.build(freq_map);
     table.build(root);
     return true;
 }
 
-void Huffman::setTable(std::unordered_map<char, boost::dynamic_bitset<>> huffmanTable) {
+void huffman::setTable(std::unordered_map<char, boost::dynamic_bitset<>> huffmanTable) {
     table.setTable(huffmanTable);
     table.setReversedTable();
 }
 
-std::string Huffman::huffmanTableToString() {
+std::string huffman::huffmanTableToString() {
     return table.toString();
 }
 
-void Huffman::huffmanTableFromString(const std::string &table_str) {
+void huffman::huffmanTableFromString(const std::string &table_str) {
     table.fromString(table_str);
 }
 
-void Huffman::printHuffmanTable() {
+void huffman::printHuffmanTable() {
     table.print();
 }
 
 
 /// PRIVATE
 
-std::map<char, int> Huffman::buildFrequencyMap(const std::string &text) {
+std::map<char, int> huffman::buildFrequencyMap(const std::string &text) {
     std::map<char, int> freq_map;
     for (char ch: text) {
         freq_map[ch]++;
@@ -121,7 +119,7 @@ std::map<char, int> Huffman::buildFrequencyMap(const std::string &text) {
     return freq_map;
 }
 
-std::string Huffman::buildLogString(const std::map<std::string, int> &log_message_frequencies) {
+std::string huffman::buildLogString(const std::map<std::string, int> &log_message_frequencies) {
     std::string result;
     for (const auto &[char_key, freq]: log_message_frequencies) {
         for (int i = 0; i < freq; ++i) {

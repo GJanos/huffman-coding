@@ -1,8 +1,8 @@
 #ifndef GLZTEST_HUFFMAN_H
 #define GLZTEST_HUFFMAN_H
 
-#include "HuffmanTree.h"
-#include "HuffmanTable.h"
+#include "huffman_tree.h"
+#include "huffman_table.h"
 
 #include <iostream>
 #include <queue>
@@ -10,9 +10,9 @@
 #include <unordered_map>
 #include <boost/dynamic_bitset.hpp>
 
-class Huffman {
+class huffman {
 public:
-    Huffman() = default;
+    huffman() = default;
     std::string compress(const std::string& text);
     std::string decompress(const std::string& text);
 
@@ -25,12 +25,11 @@ public:
     void printHuffmanTable();
 
 private:
-
-    HuffmanTree tree;
-    HuffmanTable table;
-
     std::map<char, int> buildFrequencyMap(const std::string& text);
     std::string buildLogString(const std::map<std::string, int> &map);
+
+    huffman_tree tree;
+    huffman_table table;
 };
 
 #endif //GLZTEST_HUFFMAN_H

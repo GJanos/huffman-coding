@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: glzTest
+# Project: huffman
 # Configurations: Debug
 # =============================================================================
 
@@ -41,58 +41,58 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /home/gorondi/work/glzTest/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target glzTest
+# Object build statements for EXECUTABLE target huffman
 
 
 #############################################
-# Order-only phony target for glzTest
+# Order-only phony target for huffman
 
-build cmake_object_order_depends_target_glzTest: phony || cmake_object_order_depends_target_fmt
+build cmake_object_order_depends_target_huffman: phony || cmake_object_order_depends_target_fmt
 
-build CMakeFiles/glzTest.dir/main.cpp.o: CXX_COMPILER__glzTest_Debug /home/gorondi/work/glzTest/main.cpp || cmake_object_order_depends_target_glzTest
-  DEP_FILE = CMakeFiles/glzTest.dir/main.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -Wno-missing-braces -std=gnu++20
-  INCLUDES = -I/home/gorondi/work/glzTest/cmake-build-debug/_deps/fmt-src/include -isystem /home/gorondi/work/glzTest/cmake-build-debug/_deps/glaze-src/include
-  OBJECT_DIR = CMakeFiles/glzTest.dir
-  OBJECT_FILE_DIR = CMakeFiles/glzTest.dir
+build CMakeFiles/huffman.dir/main.cpp.o: CXX_COMPILER__huffman_Debug /home/gorondi/work/glzTest/main.cpp || cmake_object_order_depends_target_huffman
+  DEP_FILE = CMakeFiles/huffman.dir/main.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/home/gorondi/work/glzTest/huffman/header -I/home/gorondi/work/glzTest/cmake-build-debug/_deps/fmt-src/include
+  OBJECT_DIR = CMakeFiles/huffman.dir
+  OBJECT_FILE_DIR = CMakeFiles/huffman.dir
 
-build CMakeFiles/glzTest.dir/Huffman.cpp.o: CXX_COMPILER__glzTest_Debug /home/gorondi/work/glzTest/Huffman.cpp || cmake_object_order_depends_target_glzTest
-  DEP_FILE = CMakeFiles/glzTest.dir/Huffman.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -Wno-missing-braces -std=gnu++20
-  INCLUDES = -I/home/gorondi/work/glzTest/cmake-build-debug/_deps/fmt-src/include -isystem /home/gorondi/work/glzTest/cmake-build-debug/_deps/glaze-src/include
-  OBJECT_DIR = CMakeFiles/glzTest.dir
-  OBJECT_FILE_DIR = CMakeFiles/glzTest.dir
+build CMakeFiles/huffman.dir/huffman/src/huffman.cpp.o: CXX_COMPILER__huffman_Debug /home/gorondi/work/glzTest/huffman/src/huffman.cpp || cmake_object_order_depends_target_huffman
+  DEP_FILE = CMakeFiles/huffman.dir/huffman/src/huffman.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/home/gorondi/work/glzTest/huffman/header -I/home/gorondi/work/glzTest/cmake-build-debug/_deps/fmt-src/include
+  OBJECT_DIR = CMakeFiles/huffman.dir
+  OBJECT_FILE_DIR = CMakeFiles/huffman.dir/huffman/src
 
-build CMakeFiles/glzTest.dir/HuffmanTable.cpp.o: CXX_COMPILER__glzTest_Debug /home/gorondi/work/glzTest/HuffmanTable.cpp || cmake_object_order_depends_target_glzTest
-  DEP_FILE = CMakeFiles/glzTest.dir/HuffmanTable.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -Wno-missing-braces -std=gnu++20
-  INCLUDES = -I/home/gorondi/work/glzTest/cmake-build-debug/_deps/fmt-src/include -isystem /home/gorondi/work/glzTest/cmake-build-debug/_deps/glaze-src/include
-  OBJECT_DIR = CMakeFiles/glzTest.dir
-  OBJECT_FILE_DIR = CMakeFiles/glzTest.dir
+build CMakeFiles/huffman.dir/huffman/src/huffman_table.cpp.o: CXX_COMPILER__huffman_Debug /home/gorondi/work/glzTest/huffman/src/huffman_table.cpp || cmake_object_order_depends_target_huffman
+  DEP_FILE = CMakeFiles/huffman.dir/huffman/src/huffman_table.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/home/gorondi/work/glzTest/huffman/header -I/home/gorondi/work/glzTest/cmake-build-debug/_deps/fmt-src/include
+  OBJECT_DIR = CMakeFiles/huffman.dir
+  OBJECT_FILE_DIR = CMakeFiles/huffman.dir/huffman/src
 
-build CMakeFiles/glzTest.dir/HuffmanTree.cpp.o: CXX_COMPILER__glzTest_Debug /home/gorondi/work/glzTest/HuffmanTree.cpp || cmake_object_order_depends_target_glzTest
-  DEP_FILE = CMakeFiles/glzTest.dir/HuffmanTree.cpp.o.d
-  FLAGS = -g -fdiagnostics-color=always -Wno-missing-braces -std=gnu++20
-  INCLUDES = -I/home/gorondi/work/glzTest/cmake-build-debug/_deps/fmt-src/include -isystem /home/gorondi/work/glzTest/cmake-build-debug/_deps/glaze-src/include
-  OBJECT_DIR = CMakeFiles/glzTest.dir
-  OBJECT_FILE_DIR = CMakeFiles/glzTest.dir
+build CMakeFiles/huffman.dir/huffman/src/huffman_tree.cpp.o: CXX_COMPILER__huffman_Debug /home/gorondi/work/glzTest/huffman/src/huffman_tree.cpp || cmake_object_order_depends_target_huffman
+  DEP_FILE = CMakeFiles/huffman.dir/huffman/src/huffman_tree.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -I/home/gorondi/work/glzTest/huffman/header -I/home/gorondi/work/glzTest/cmake-build-debug/_deps/fmt-src/include
+  OBJECT_DIR = CMakeFiles/huffman.dir
+  OBJECT_FILE_DIR = CMakeFiles/huffman.dir/huffman/src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target glzTest
+# Link build statements for EXECUTABLE target huffman
 
 
 #############################################
-# Link the executable glzTest
+# Link the executable huffman
 
-build glzTest: CXX_EXECUTABLE_LINKER__glzTest_Debug CMakeFiles/glzTest.dir/main.cpp.o CMakeFiles/glzTest.dir/Huffman.cpp.o CMakeFiles/glzTest.dir/HuffmanTable.cpp.o CMakeFiles/glzTest.dir/HuffmanTree.cpp.o | _deps/fmt-build/libfmtd.a /usr/local/lib/liblz4.so /usr/local/lib/libsnappy.a || _deps/fmt-build/libfmtd.a
+build huffman: CXX_EXECUTABLE_LINKER__huffman_Debug CMakeFiles/huffman.dir/main.cpp.o CMakeFiles/huffman.dir/huffman/src/huffman.cpp.o CMakeFiles/huffman.dir/huffman/src/huffman_table.cpp.o CMakeFiles/huffman.dir/huffman/src/huffman_tree.cpp.o | _deps/fmt-build/libfmtd.a || _deps/fmt-build/libfmtd.a
   FLAGS = -g
-  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  _deps/fmt-build/libfmtd.a  /usr/local/lib/liblz4.so  /usr/local/lib/libsnappy.a
-  OBJECT_DIR = CMakeFiles/glzTest.dir
+  LINK_LIBRARIES = _deps/fmt-build/libfmtd.a
+  OBJECT_DIR = CMakeFiles/huffman.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = glzTest
-  TARGET_PDB = glzTest.dbg
+  TARGET_FILE = huffman
+  TARGET_PDB = huffman.dbg
 
 
 #############################################
@@ -116,118 +116,6 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
   restat = 1
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
-
-
-#############################################
-# Utility command for list_install_components
-
-build list_install_components: phony
-
-
-#############################################
-# Utility command for install
-
-build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/gorondi/work/glzTest/cmake-build-debug && /opt/clion-2022.3.2/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
-  DESC = Install the project...
-  pool = console
-  restat = 1
-
-build install: phony CMakeFiles/install.util
-
-
-#############################################
-# Utility command for install/local
-
-build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/gorondi/work/glzTest/cmake-build-debug && /opt/clion-2022.3.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-  DESC = Installing only the local directory...
-  pool = console
-  restat = 1
-
-build install/local: phony CMakeFiles/install/local.util
-
-
-#############################################
-# Utility command for install/strip
-
-build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/gorondi/work/glzTest/cmake-build-debug && /opt/clion-2022.3.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-  DESC = Installing the project stripped...
-  pool = console
-  restat = 1
-
-build install/strip: phony CMakeFiles/install/strip.util
-
-# =============================================================================
-# Write statements declared in CMakeLists.txt:
-# /home/gorondi/work/glzTest/CMakeLists.txt
-# =============================================================================
-
-
-#############################################
-# Utility command for edit_cache
-
-build _deps/glaze-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/gorondi/work/glzTest/cmake-build-debug/_deps/glaze-build && /opt/clion-2022.3.2/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
-  restat = 1
-
-build _deps/glaze-build/edit_cache: phony _deps/glaze-build/CMakeFiles/edit_cache.util
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build _deps/glaze-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/gorondi/work/glzTest/cmake-build-debug/_deps/glaze-build && /opt/clion-2022.3.2/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S/home/gorondi/work/glzTest -B/home/gorondi/work/glzTest/cmake-build-debug
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build _deps/glaze-build/rebuild_cache: phony _deps/glaze-build/CMakeFiles/rebuild_cache.util
-
-
-#############################################
-# Utility command for list_install_components
-
-build _deps/glaze-build/list_install_components: phony
-
-
-#############################################
-# Utility command for install
-
-build _deps/glaze-build/CMakeFiles/install.util: CUSTOM_COMMAND _deps/glaze-build/all
-  COMMAND = cd /home/gorondi/work/glzTest/cmake-build-debug/_deps/glaze-build && /opt/clion-2022.3.2/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
-  DESC = Install the project...
-  pool = console
-  restat = 1
-
-build _deps/glaze-build/install: phony _deps/glaze-build/CMakeFiles/install.util
-
-
-#############################################
-# Utility command for install/local
-
-build _deps/glaze-build/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/glaze-build/all
-  COMMAND = cd /home/gorondi/work/glzTest/cmake-build-debug/_deps/glaze-build && /opt/clion-2022.3.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-  DESC = Installing only the local directory...
-  pool = console
-  restat = 1
-
-build _deps/glaze-build/install/local: phony _deps/glaze-build/CMakeFiles/install/local.util
-
-
-#############################################
-# Utility command for install/strip
-
-build _deps/glaze-build/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/glaze-build/all
-  COMMAND = cd /home/gorondi/work/glzTest/cmake-build-debug/_deps/glaze-build && /opt/clion-2022.3.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-  DESC = Installing the project stripped...
-  pool = console
-  restat = 1
-
-build _deps/glaze-build/install/strip: phony _deps/glaze-build/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -296,48 +184,6 @@ build _deps/fmt-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build _deps/fmt-build/rebuild_cache: phony _deps/fmt-build/CMakeFiles/rebuild_cache.util
 
-
-#############################################
-# Utility command for list_install_components
-
-build _deps/fmt-build/list_install_components: phony
-
-
-#############################################
-# Utility command for install
-
-build _deps/fmt-build/CMakeFiles/install.util: CUSTOM_COMMAND _deps/fmt-build/all
-  COMMAND = cd /home/gorondi/work/glzTest/cmake-build-debug/_deps/fmt-build && /opt/clion-2022.3.2/bin/cmake/linux/x64/bin/cmake -P cmake_install.cmake
-  DESC = Install the project...
-  pool = console
-  restat = 1
-
-build _deps/fmt-build/install: phony _deps/fmt-build/CMakeFiles/install.util
-
-
-#############################################
-# Utility command for install/local
-
-build _deps/fmt-build/CMakeFiles/install/local.util: CUSTOM_COMMAND _deps/fmt-build/all
-  COMMAND = cd /home/gorondi/work/glzTest/cmake-build-debug/_deps/fmt-build && /opt/clion-2022.3.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-  DESC = Installing only the local directory...
-  pool = console
-  restat = 1
-
-build _deps/fmt-build/install/local: phony _deps/fmt-build/CMakeFiles/install/local.util
-
-
-#############################################
-# Utility command for install/strip
-
-build _deps/fmt-build/CMakeFiles/install/strip.util: CUSTOM_COMMAND _deps/fmt-build/all
-  COMMAND = cd /home/gorondi/work/glzTest/cmake-build-debug/_deps/fmt-build && /opt/clion-2022.3.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-  DESC = Installing the project stripped...
-  pool = console
-  restat = 1
-
-build _deps/fmt-build/install/strip: phony _deps/fmt-build/CMakeFiles/install/strip.util
-
 # =============================================================================
 # Target aliases.
 
@@ -353,7 +199,7 @@ build libfmtd.a: phony _deps/fmt-build/libfmtd.a
 #############################################
 # Folder: /home/gorondi/work/glzTest/cmake-build-debug
 
-build all: phony glzTest _deps/glaze-build/all _deps/fmt-build/all
+build all: phony huffman _deps/fmt-build/all
 
 # =============================================================================
 
@@ -363,27 +209,20 @@ build all: phony glzTest _deps/glaze-build/all _deps/fmt-build/all
 build _deps/fmt-build/all: phony _deps/fmt-build/libfmtd.a
 
 # =============================================================================
-
-#############################################
-# Folder: /home/gorondi/work/glzTest/cmake-build-debug/_deps/glaze-build
-
-build _deps/glaze-build/all: phony
-
-# =============================================================================
 # Built-in targets
 
 
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/gorondi/work/glzTest/CMakeLists.txt /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeDependentOption.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeParseArguments.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CheckCXXCompilerFlag.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CheckCXXSourceCompiles.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CheckSymbolExists.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FetchContent.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FetchContent/CMakeLists.cmake.in /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindBoost.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindGit.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindPackageMessage.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/GNUInstallDirs.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Internal/CheckCompilerFlag.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Internal/CheckFlagCommonConfig.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux-GNU-C.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux-GNU-CXX.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux-GNU.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake /usr/local/lib/cmake/Boost-1.76.0/BoostConfig.cmake /usr/local/lib/cmake/Boost-1.76.0/BoostConfigVersion.cmake /usr/local/lib/cmake/boost_headers-1.76.0/boost_headers-config-version.cmake /usr/local/lib/cmake/boost_headers-1.76.0/boost_headers-config.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake _deps/fmt-src/CMakeLists.txt _deps/fmt-src/support/cmake/JoinPaths.cmake _deps/fmt-src/support/cmake/cxx14.cmake _deps/glaze-src/CMakeLists.txt _deps/glaze-src/cmake/install-rules.cmake _deps/glaze-src/cmake/prelude.cmake _deps/glaze-src/cmake/project-is-top-level.cmake _deps/glaze-src/cmake/variables.cmake
+build build.ninja: RERUN_CMAKE | /home/gorondi/work/glzTest/CMakeLists.txt /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeParseArguments.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CheckCXXCompilerFlag.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CheckCXXSourceCompiles.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CheckSymbolExists.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FetchContent.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FetchContent/CMakeLists.cmake.in /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindBoost.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindGit.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindPackageMessage.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/GNUInstallDirs.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Internal/CheckCompilerFlag.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Internal/CheckFlagCommonConfig.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux-GNU-C.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux-GNU-CXX.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux-GNU.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /usr/local/lib/cmake/Boost-1.76.0/BoostConfig.cmake /usr/local/lib/cmake/Boost-1.76.0/BoostConfigVersion.cmake /usr/local/lib/cmake/boost_headers-1.76.0/boost_headers-config-version.cmake /usr/local/lib/cmake/boost_headers-1.76.0/boost_headers-config.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake _deps/fmt-src/CMakeLists.txt _deps/fmt-src/support/cmake/JoinPaths.cmake _deps/fmt-src/support/cmake/cxx14.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/gorondi/work/glzTest/CMakeLists.txt /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/BasicConfigVersion-SameMajorVersion.cmake.in /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeDependentOption.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakePackageConfigHelpers.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeParseArguments.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CheckCXXCompilerFlag.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CheckCXXSourceCompiles.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CheckSymbolExists.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FetchContent.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FetchContent/CMakeLists.cmake.in /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindBoost.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindGit.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindPackageMessage.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/GNUInstallDirs.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Internal/CheckCompilerFlag.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Internal/CheckFlagCommonConfig.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux-GNU-C.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux-GNU-CXX.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux-GNU.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/WriteBasicConfigVersionFile.cmake /usr/local/lib/cmake/Boost-1.76.0/BoostConfig.cmake /usr/local/lib/cmake/Boost-1.76.0/BoostConfigVersion.cmake /usr/local/lib/cmake/boost_headers-1.76.0/boost_headers-config-version.cmake /usr/local/lib/cmake/boost_headers-1.76.0/boost_headers-config.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake _deps/fmt-src/CMakeLists.txt _deps/fmt-src/support/cmake/JoinPaths.cmake _deps/fmt-src/support/cmake/cxx14.cmake _deps/glaze-src/CMakeLists.txt _deps/glaze-src/cmake/install-rules.cmake _deps/glaze-src/cmake/prelude.cmake _deps/glaze-src/cmake/project-is-top-level.cmake _deps/glaze-src/cmake/variables.cmake: phony
+build /home/gorondi/work/glzTest/CMakeLists.txt /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCInformation.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCXXInformation.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeGenericSystem.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeParseArguments.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CheckCXXCompilerFlag.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CheckCXXSourceCompiles.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/CheckSymbolExists.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/GNU-C.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/GNU-CXX.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Compiler/GNU.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FetchContent.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FetchContent/CMakeLists.cmake.in /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindBoost.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindGit.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindPackageHandleStandardArgs.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/FindPackageMessage.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/GNUInstallDirs.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Internal/CheckCompilerFlag.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Internal/CheckFlagCommonConfig.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Internal/CheckSourceCompiles.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux-GNU-C.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux-GNU-CXX.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux-GNU.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/Linux.cmake /opt/clion-2022.3.2/bin/cmake/linux/x64/share/cmake-3.24/Modules/Platform/UnixPaths.cmake /usr/local/lib/cmake/Boost-1.76.0/BoostConfig.cmake /usr/local/lib/cmake/Boost-1.76.0/BoostConfigVersion.cmake /usr/local/lib/cmake/boost_headers-1.76.0/boost_headers-config-version.cmake /usr/local/lib/cmake/boost_headers-1.76.0/boost_headers-config.cmake CMakeCache.txt CMakeFiles/3.24.2/CMakeCCompiler.cmake CMakeFiles/3.24.2/CMakeCXXCompiler.cmake CMakeFiles/3.24.2/CMakeSystem.cmake _deps/fmt-src/CMakeLists.txt _deps/fmt-src/support/cmake/JoinPaths.cmake _deps/fmt-src/support/cmake/cxx14.cmake: phony
 
 
 #############################################

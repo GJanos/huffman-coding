@@ -1,12 +1,12 @@
-#ifndef GLZTEST_HUFFMANTREE_H
-#define GLZTEST_HUFFMANTREE_H
+#ifndef GLZTEST_HUFFMAN_TREE_H
+#define GLZTEST_HUFFMAN_TREE_H
 
 
 #include <map>
 #include <vector>
 #include <queue>
 
-class HuffmanTree {
+class huffman_tree {
 public:
     struct Node {
         char ch;
@@ -36,4 +36,4 @@ private:
 };
 
 
-#endif //GLZTEST_HUFFMANTREE_H
+#endif //GLZTEST_HUFFMAN_TREE_H
